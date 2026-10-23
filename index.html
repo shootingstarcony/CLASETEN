@@ -40,10 +40,10 @@
     fill-opacity: .2;
     stroke-width: 1;
     transition: all ease .4s;
-.area:hover {
-    fill-opacity: .8;
-    transition: all ease .4s;
 }
+.area:hover {
+    fill-opacity: .3;
+    transition: all ease .4s;
 }
 .scale {
     fill: none;
@@ -80,6 +80,15 @@
     .s1 { --c: #fdbe70; }
     .s2 { --c: #bee5a0; }
     .s3 { --c: #5e4fa2; }
+
+/* ===== CAMBIO: efecto hover ===== */
+.radar polygon {
+    transition: fill-opacity .4s ease;
+}
+.radar polygon:hover {
+    fill-opacity: .85;
+}
+/* ================================ */
   </style>
 
   <g transform="translate(305,315)">
@@ -119,21 +128,23 @@
 
 
     <g class="radar s0">
-  <polygon class="area" points="0,-281 195,-63.3 163.4,224.9 -129.9,178.8 -271.1,-88.1" />
-  ...
-</g>
-<g class="radar s1">
-  <polygon class="area" points="0,-205 62.8,-20.4 166.9,229.8 -128.7,177.2 -271.1,-88.1" />
-  ...
-</g>
-<g class="radar s2">
-  <polygon class="area" points="0,-182 101.8,-33.1 149.9,206.3 -147.5,203.1 -235.9,-76.6" />
-  ...
-</g>
-<g class="radar s3">
-  <polygon class="area" points="0,-84 80.8,-26.3 135.8,186.9 -102.3,140.8 -260.6,-84.7" />
-  ...
-</g>
+      <polygon points="0,-281 195,-63.3 163.4,224.9 -129.9,178.8 -271.1,-88.1" />
+      <circle cx="0" cy="-281" /><circle cx="195" cy="-63.3" /><circle cx="163.4" cy="224.9" /><circle cx="-129.9" cy="178.8" /><circle cx="-271.1" cy="-88.1" />
+    </g>
+    <g class="radar s1">
+      <polygon points="0,-205 62.8,-20.4 166.9,229.8 -128.7,177.2 -271.1,-88.1" />
+      <circle cx="0" cy="-205" /><circle cx="62.8" cy="-20.4" /><circle cx="166.9" cy="229.8" /><circle cx="-128.7" cy="177.2" /><circle cx="-271.1" cy="-88.1" />
+    </g>
+    <g class="radar s2">
+      <polygon points="0,-182 101.8,-33.1 149.9,206.3 -147.5,203.1 -235.9,-76.6" />
+      <circle cx="0" cy="-182" /><circle cx="101.8" cy="-33.1" /><circle cx="149.9" cy="206.3" /><circle cx="-147.5" cy="203.1" /><circle cx="-235.9" cy="-76.6" />
+    </g>
+    <g class="radar s3">
+      <polygon points="0,-84 80.8,-26.3 135.8,186.9 -102.3,140.8 -260.6,-84.7" />
+      <circle cx="0" cy="-84" /><circle cx="80.8" cy="-26.3" /><circle cx="135.8" cy="186.9" /><circle cx="-102.3" cy="140.8" /><circle cx="-260.6" cy="-84.7" />
+    </g>
+  </g>
+
 
   <g class="legend" transform="translate(810,30)">
     <text class="title">Nombres de las instituciónes</text>

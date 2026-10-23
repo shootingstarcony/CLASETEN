@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soy una página</title>
+	<!-- Soy una fuente de google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<style>
+	body{ font-family: 'Times New Roman', Georgia, serif; font-size: 12px; }
+	</style>
+</head>
+<body>
+<!-- Soy un svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 600" onclick="alert('No quiero decir nada')">
+  <style>
+.grid {
+    fill: none;
+    stroke: lightgray;
+}
+.axis {
+    stroke: black;
+}
+.label {
+    font-size: 10px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.tick {
+    font-size: 10px;
+    text-anchor: end;
+    dominant-baseline: middle;
+}
+.area {
+    fill-opacity: 0.1;
+    stroke-width: 1;
+    transition: all ease 0.4s;
+}
+.area:hover {
+    fill-opacity: 0.3;
+    transition: all ease 0.4s;
+}
+.scale {
+    fill: none;
+    stroke: currentColor;
+}
+.scale-text {
+    font-family: sans-serif;
+    font-size: 10px;
+    text-anchor: end;
+    dominant-baseline: central;
+}
+.radar polygon {
+    fill: var(--c);
+    fill-opacity: 0.5;
+    stroke: var(--c);
+}
+.radar circle {
+    fill: var(--c);
+    r: 2;
+}
+.swatch {
+    width: 15px;
+    height: 15px;
+    fill: var(--c);
+}
+.legend text {
+    font-size: 10px;
+}
+.legend .title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+    .s0 { --c: #9e0142; }
+    .s1 { --c: #fdbe70; }
+    .s2 { --c: #bee5a0; }
+    .s3 { --c: #5e4fa2; }
+  </style>
+
+  <g transform="translate(305,315)">
+    <circle class="grid" r="285" />
+    <circle class="grid" r="257" />
+    <circle class="grid" r="228" />
+    <circle class="grid" r="200" />
+    <circle class="grid" r="171" />
+    <circle class="grid" r="143" />
+    <circle class="grid" r="114" />
+    <circle class="grid" r="86" />
+    <circle class="grid" r="57" />
+    <circle class="grid" r="29" />
+
+    <!-- Ejes -->
+    <path class="axis" d="M0 0V-285 M0 0L271.1 -88.1 M0 0L167.5 230.6 M0 0L-167.5 230.6 M0 0L-271.1 -88.1" />
+
+    <text class="label" x="0"      y="-295">Academicos con Doctorado</text>
+    <text class="label" x="280.6"  y="-91.2">Academicos por Estudiantes</text>
+    <text class="label" x="173.4"  y="238.7">Papers por facultad</text>
+    <text class="label" x="-173.4" y="238.7">Papers Citados</text>
+    <text class="label" x="-280.6" y="-91.2">Reputación de Academicos</text>
+
+  
+    <path class="scale" d="M-6 -285H0V0H-6 M-6 -257H0 M-6 -228H0 M-6 -200H0 M-6 -171H0 M-6 -143H0 M-6 -114H0 M-6 -86H0 M-6 -57H0 M-6 -29H0" />
+    <text class="scale-text" x="-9" y="-285">100</text>
+    <text class="scale-text" x="-9" y="-257">90</text>
+    <text class="scale-text" x="-9" y="-228">80</text>
+    <text class="scale-text" x="-9" y="-200">70</text>
+    <text class="scale-text" x="-9" y="-171">60</text>
+    <text class="scale-text" x="-9" y="-143">50</text>
+    <text class="scale-text" x="-9" y="-114">40</text>
+    <text class="scale-text" x="-9" y="-86">30</text>
+    <text class="scale-text" x="-9" y="-57">20</text>
+    <text class="scale-text" x="-9" y="-29">10</text>
+    <text class="scale-text" x="-9" y="0">0</text>
+
+
+    <g class="radar s0">
+      <polygon points="0,-281 195,-63.3 163.4,224.9 -129.9,178.8 -271.1,-88.1" />
+      <circle cx="0" cy="-281" /><circle cx="195" cy="-63.3" /><circle cx="163.4" cy="224.9" /><circle cx="-129.9" cy="178.8" /><circle cx="-271.1" cy="-88.1" />
+    </g>
+    <g class="radar s1">
+      <polygon points="0,-205 62.8,-20.4 166.9,229.8 -128.7,177.2 -271.1,-88.1" />
+      <circle cx="0" cy="-205" /><circle cx="62.8" cy="-20.4" /><circle cx="166.9" cy="229.8" /><circle cx="-128.7" cy="177.2" /><circle cx="-271.1" cy="-88.1" />
+    </g>
+    <g class="radar s2">
+      <polygon points="0,-182 101.8,-33.1 149.9,206.3 -147.5,203.1 -235.9,-76.6" />
+      <circle cx="0" cy="-182" /><circle cx="101.8" cy="-33.1" /><circle cx="149.9" cy="206.3" /><circle cx="-147.5" cy="203.1" /><circle cx="-235.9" cy="-76.6" />
+    </g>
+    <g class="radar s3">
+      <polygon points="0,-84 80.8,-26.3 135.8,186.9 -102.3,140.8 -260.6,-84.7" />
+      <circle cx="0" cy="-84" /><circle cx="80.8" cy="-26.3" /><circle cx="135.8" cy="186.9" /><circle cx="-102.3" cy="140.8" /><circle cx="-260.6" cy="-84.7" />
+    </g>
+  </g>
+
+
+  <g class="legend" transform="translate(810,30)">
+    <text class="title">Nombres de las instituciónes</text>
+
+    <g transform="translate(0,16)">
+      <rect class="swatch s0" />
+      <text x="20" y="12.5">Pontificia Universidad<tspan x="20" dy="1.2em">Católica de Chile (PUC)</tspan></text>
+    </g>
+    <g transform="translate(0,52.6)">
+      <rect class="swatch s1" />
+      <text x="20" y="12.5">Universidad de Chile (UCH)</text>
+    </g>
+    <g transform="translate(0,73.6)">
+      <rect class="swatch s2" />
+      <text x="20" y="12.5">Universidad de Concepción (Udec)</text>
+    </g>
+    <g transform="translate(0,94.6)">
+      <rect class="swatch s3" />
+      <text x="20" y="12.5">Universidad de Santiago de<tspan x="20" dy="1.2em">Chile (USACH)</tspan></text>
+     </g>
+   </g>
+  </svg>
+<!-- y aquí termino-->
+</body>
+</html>
